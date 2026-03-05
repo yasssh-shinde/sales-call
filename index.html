@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SEOFox.io — Sales Call Script</title>
+<title>SEOFox.io Sales Call Script</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -161,26 +161,25 @@
   }
 
   /* ── MAIN ── */
-  main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 52px 36px 80px;
-  }
+main {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 52px 36px 80px;
+}
 
   /* ── TREE ── */
   .tree { display: flex; flex-direction: column; align-items: center; }
 
   /* Nodes */
-  .node {
-    background: var(--white);
-    border: 1.5px solid var(--border);
-    border-radius: 14px;
-    padding: 20px 24px;
-    width: 100%;
-    max-width: 440px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    transition: all 0.2s ease;
-  }
+.node {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 20px 24px;
+  width: 100%;
+  max-width: 700px;
+}
   .node:hover {
     border-color: var(--cyan);
     box-shadow: 0 6px 24px rgba(13,207,207,0.12);
@@ -285,21 +284,20 @@
   }
 
   /* Branches */
-  .branch-row {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-  }
-  .branch-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    max-width: 500px;
-    min-width: 0;
-  }
+.branch-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.branch-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
   .branch-pill {
     font-size: 0.7rem;
     font-weight: 800;
@@ -596,7 +594,36 @@
 
     <div class="v-line"></div>
     <div class="end-dot"></div>
+    <div class="v-line"></div>
+<div class="arrowhead"></div>
 
+<div class="node" style="max-width:520px;text-align:center;border:2px solid #0dcfcf;background:rgba(13,207,207,0.05);">
+  <div class="node-tag tag-cyan">Need Help?</div>
+  <div class="node-title">📞 Call the Team</div>
+
+  <div class="node-body" style="margin-top:12px;font-size:0.9rem;">
+    <p><strong>Dnyaneshwari Ma'am</strong><br>
+    <a href="tel:8767532568">📞 8767532568</a></p>
+
+    <p style="margin-top:10px;"><strong>Yash</strong><br>
+    <a href="tel:9404107465">📞 9404107465</a></p>
+  </div>
+</div>
+<div class="v-line"></div>
+<div class="arrowhead"></div>
+
+<div class="node" style="max-width:520px;text-align:center;border:2px dashed #888;background:#f8f6ef;">
+  <div class="node-tag tag-grey">End of Script</div>
+  <div class="node-title">😂 Sales Reality Check</div>
+
+  <div class="quote" style="border-left:3px solid #888;background:#faf9f4;">
+    "If the client says: <strong>Send details on WhatsApp</strong>  
+    → Congratulations 🎉  
+    You have officially entered the **Follow-Up Zone**."
+    <br><br>
+    Mission now: <strong>Call again tomorrow 😄</strong>
+  </div>
+</div>
   </div>
 
   <!-- TIPS -->
